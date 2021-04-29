@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  margin: 0%;
+  padding: 0;
+  overflow-x: hidden;
+
+  font-family: Poppins, Open Sans, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+}
+
+/* header */
+.intro {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.font-bold {
+  font-weight: 700;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.intro > h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.header-btn > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-btn {
+  margin-top: 3%;
+}
+
+.header-btn:hover {
+  background-color: #f0b223;
+}
+
+.header-btn:hover > .fas {
+  animation: arrow-animation 0.2s linear forwards;
+}
+
+@keyframes arrow-animation {
+  100% {
+    transform: rotate(90deg);
+    transform-origin: 60% 50%;
+  }
+}
+
+.top-container-filler {
+  margin-top: 100vh;
+}
+
+/* navbar */
+
+.nav-bar > .flex {
+  display: flex;
+  border: none;
+  background-color: #201741;
+}
+.page-link {
+  padding: 1% 0% 1% 4%;
+  border: none;
+  font-size: 1.15rem;
+  background-color: #201741;
+}
+
+.page-link > a {
+  color: white;
+  text-underline-offset: 0;
+  border: none;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.page-link > a:hover {
+  color: #f0b223;
+}
+
+.page-link:hover {
+  background-color: inherit;
+  border: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro > h1 {
+    font-size: 1.575rem;
+    line-height: 2.25rem;
+  }
+}

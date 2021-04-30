@@ -6,15 +6,16 @@ body,
 html {
   margin: 0%;
   padding: 0;
-  overflow-x: hidden;
-
+  /* overflow-x: hidden; */
   font-family: Poppins, Open Sans, ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
     sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
     Noto Color Emoji;
+  color: #45474a;
 }
 
 /* header */
+
 .intro {
   position: absolute;
   margin: 0;
@@ -26,21 +27,10 @@ html {
   text-align: center;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-.font-bold {
-  font-weight: 700;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .intro > h1 {
   font-size: 3rem;
   line-height: 1.2;
+  margin: initial;
 }
 
 .header-btn > a {
@@ -72,17 +62,23 @@ html {
 }
 
 /* navbar */
+nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  border-bottom: 3px solid #f0b223;
+}
 
 .nav-bar > .flex {
   display: flex;
   border: none;
-  background-color: #201741;
+  background-color: #21144b;
 }
 .page-link {
   padding: 1% 0% 1% 4%;
   border: none;
   font-size: 1.15rem;
-  background-color: #201741;
+  background-color: #21144b;
 }
 
 .page-link > a {
@@ -101,10 +97,88 @@ html {
   background-color: inherit;
   border: inherit;
 }
+/* general */
+h1 {
+  text-align: center;
+  color: #45474a;
+}
 
-@media only screen and (max-width: 600px) {
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.font-bold {
+  font-weight: 700;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.section-header {
+  margin: 100px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-header > hr {
+  width: 100px;
+  opacity: 1;
+  height: 3px;
+  color: #45474a;
+  margin-top: 8px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+.left-img {
+  margin: 0px 0px 40px 15%;
+}
+
+.right-description {
+  margin: 35px 10%;
+}
+
+p {
+  display: block;
+  font-size: 1.1rem;
+  color: #616161;
+  padding-top: 10px;
+}
+
+#skills {
+  background-color: #2a1a5e;
+}
+
+@media (max-width: 768px) {
   .intro > h1 {
     font-size: 1.575rem;
     line-height: 2.25rem;
+  }
+  .about {
+    display: block;
+  }
+  .left-img {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  .container-flex {
+    text-align: center;
+  }
+  p {
+    text-align: left;
+    padding-top: initial;
+    font-size: initial;
   }
 }

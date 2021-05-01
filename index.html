@@ -8,13 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/300865bf0d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/background-animation.css">
+    <link rel="stylesheet" href="./css/skillbar.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Aadarsh Goyal</title>
 </head>
 
 <body>
-
 
     <ul class="top-container-background" id="header">
         <li></li>
@@ -27,7 +29,6 @@
         <li></li>
         <li></li>
     </ul>
-
 
     <div class="top-container">
         <div class="intro">
@@ -44,11 +45,8 @@
             </button>
         </div>
     </div>
-
-
     <div class="top-container-filler">
     </div>
-
 
     <nav class="nav-bar" id="navbar">
         <div class="flex">
@@ -68,10 +66,15 @@
                 </a>
             </div>
             <div class="page-link">
-                <a href="#header">
-                    ACHIEVEMENTS
+                <a href="#projects">
+                    PROJECTS
                 </a>
             </div>
+            <!-- <div class="page-link">
+                <a href="#achievements">
+                    ACHIEVEMENTS
+                </a>
+            </div> -->
             <!-- <div class="page-link">
                 <a href="#header">
                     Contact
@@ -80,16 +83,15 @@
         </div>
     </nav>
 
-
     <section id="about">
         <div class="container-flex">
             <div class="section-header">
                 <h1 class="font-bold">ABOUT ME</h1>
                 <hr>
             </div>
-            <div class="about">
+            <div class="section-body">
                 <div class="left-img">
-                    <img src="./assets/profile pic .png" alt="Profile Image" width="250" height="250">
+                    <img src="./assets/profile-img/profile pic  (3).png" alt="Profile Image" width="290" height="250">
                 </div>
                 <div class="right-description">
                     <h4>Who's this guy?</h4>
@@ -115,50 +117,176 @@
         </div>
     </section>
 
-
     <section id="skills">
         <div class="container-flex">
             <div class="section-header">
-                <h1 class="font-bold text-white">SKILLS</h1>
-                <hr class="text-white">
+                <h1 class="font-bold">SKILLS</h1>
+                <hr>
             </div>
-            <div class="about">
-                <div class="left-img">
-                    <img src="./assets/profile pic .png" alt="Profile Image" width="250" height="250">
-                </div>
-                <div class="right-description">
-                    <h4 class="text-white">Who's this guy?</h4>
-                    <p class="text-white">
-                        I'm a B.Tech Undergraduate persuing
-                        <strong>
-                            Computer Science
-                        </strong>
-                        degree at the
-                        <a href="https://www.iiitp.ac.in/" target="_blank" rel="noopener noreferrer"
-                            style="text-decoration: none; color: inherit;">
-                            <strong>
-                                Indian Institution of
-                                Information
-                                Technology, Pune.
-                            </strong>
-                        </a>
-                        I am a Competitive Programmer and a Full Stack Developer and I keep learning new technologies.
-                        I'm a foodie and love to play chess in my leisure time.
-                    </p>
-                </div>
-            </div>
+            <div class="container-skillbar">
+
+                <div class="skillbar clearfix " style="background: rgb(221, 30, 46,0.2);" data-percent="70%">
+                    <div class="skillbar-title" style="background: #DD1E2F;"><span>C / C++</span></div>
+                    <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> <!-- Ende Skill Bar -->
+
+                <div class="skillbar clearfix " style="background: rgb(221, 30, 46,0.2);" data-percent="70%">
+                    <div class="skillbar-title" style="background: #DD1E2F;">
+                        <span>Python <i class="fab fa-python m-1"></i></span>
+                    </div>
+                    <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> <!-- Ende Skill Bar -->
+
+                <div class="skillbar clearfix " style="background: rgb(221, 30, 46,0.2);" data-percent="70%">
+                    <div class="skillbar-title" style="background: #DD1E2F;">
+                        <span>HTML5 <i class="fab fa-html5 m-1"></i></span>
+                    </div>
+                    <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> <!-- Ende Skill Bar -->
+
+                <div class="skillbar clearfix " style="background: rgb(221, 30, 46,0.2);" data-percent="70%">
+                    <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
+                    <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> <!-- Ende Skill Bar -->
+
+                <div class="skillbar clearfix " style="background: rgb(235, 176, 53, 0.2);" data-percent="65%">
+                    <div class="skillbar-title" style="background: #EBB035;">
+                        <span>CSS3 <i class="fab fa-css3-alt m-1"></i></span>
+                    </div>
+                    <div class="skillbar-bar" style="background: #EBB035;"></div>
+                    <div class="skill-bar-percent">65%</div>
+                </div> <!-- Ende Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="25%">
+                    <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery<i
+                                class="fab fa-github m-1"></i></span></div>
+                    <div class="skillbar-bar" style="background: #06A2CB;"></div>
+                    <div class="skill-bar-percent">25%</div>
+                </div> <!-- Ende Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="80%">
+                    <div class="skillbar-title" style="background: #218559;"><span>Photoshop</span></div>
+                    <div class="skillbar-bar" style="background: #218559;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div> <!-- Ende Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="85%">
+                    <div class="skillbar-title" style="background: #D0C6B1;"><span>Indesign</span></div>
+                    <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+                    <div class="skill-bar-percent">85%</div>
+                </div> <!-- Ende Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="75%">
+                    <div class="skillbar-title" style="background: #192823;"><span>Illustrator</span></div>
+                    <div class="skillbar-bar" style="background: #454545;"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div> <!-- Ende Skill Bar -->
+            </div><!-- Ende container Skill Bar -->
         </div>
     </section>
 
     <section id="projects">
         <div class="container-flex">
             <div class="section-header">
-                <h1 class="font-bold">ABOUT ME</h1>
+                <h1 class="font-bold">MY PROJECTS</h1>
                 <hr>
             </div>
-            <div class="about">
+            <div class="section-body">
                 <div class="left-img">
-                    <img src="./assets/profile pic .png" alt="Profile Image" width="250" height="250">
+                    <img src="./assets/project-img/pathfinder-img.png" alt="A* Pathfinder Image" width="280"
+                        height="300">
+                </div>
+                <div class="right-description">
+                    <h4 class="font-bold">A* Pathfinding Alogrithm Visualizer</h4>
+                    <p>
+                        A <strong> python </strong> program using <strong>pygame</strong> module to visualize how A*
+                        algorithms works to find the shortest path between two given nodes avoiding all the barriers
+                    </p>
+                    <div class="project-buttons">
+                        <button class="btn btn-warning btn-md header-btn font-bold" style="color: #45474a;">
+                            CODE <i class="fab fa-github m-1"></i>
+                        </button>
+                        <!-- <button class="btn btn-warning btn-md header-btn font-bold"
+                            style="color: #45474a; margin-left: 5%;">
+                            <a href="https://github.com/aadarsh-11/A-Star-Path-Finding-Visualizer" target="_blank"
+                                rel="noopener noreferrer">
+                                LIVE <i class="fas fa-play-circle m-1"></i>
+                            </a>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="left-description">
+                    <h4 class="font-bold">My Portfolio Website</h4>
+                    <p>
+                        This <strong>Beautiful</strong> Website you are currently looking at is one of my best front-end
+                        work I have done
+                        yet! Its fully responsive on different screen sizes and looks great and works on all devices.
+                    </p>
+                    <div class="project-buttons">
+                        <button class="btn btn-warning btn-md header-btn font-bold" style="color: #45474a;">
+                            <a href="#header">
+                                LIVE <i class="fas fa-play-circle m-1"></i>
+                            </a>
+                        </button>
+                        <button class="btn btn-warning btn-md header-btn font-bold"
+                            style="color: #45474a; margin-left: 5%;">
+                            <a href="https://github.com/aadarsh-11/personal-portfolio" target="_blank"
+                                rel="noopener noreferrer">
+                                CODE <i class="fab fa-github m-1"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="right-img">
+                    <img src="./assets/project-img/portfolio-img.png" alt="Portfolio Image" width="300" height="300">
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="left-img">
+                    <img src="./assets/project-img/sudoku-img.png" alt="Sudoku project image" width="260" height="300">
+                </div>
+                <div class="right-description">
+                    <h4 class="font-bold">SUDOKU Solver GUI</h4>
+                    <p>
+                        We all have played <strong>SUDOKU</strong> at least once (if not, please do!) in our life. I
+                        made this
+                        <strong> python </strong> program using <strong>pygame</strong> module which enables you to play
+                        sudoku
+                        and more importantly visualize how
+                        <strong>backtracking algorithm</strong> works and solves the sudoku on its own!
+                    </p>
+                    <div class="project-buttons">
+                        <button class="btn btn-warning btn-md header-btn font-bold" style="color: #45474a;">
+                            CODE <i class="fab fa-github m-1"></i>
+                        </button>
+                        <!-- <button class="btn btn-warning btn-md header-btn font-bold"
+                            style="color: #45474a; margin-left: 5%;">
+                            <a href="https://github.com/aadarsh-11/Sudoku-Solver-GUI" target="_blank"
+                                rel="noopener noreferrer">
+                                LIVE <i class="fas fa-play-circle m-1"></i>
+                            </a>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container-flex">
+            <div class="section-header">
+                <h1 class="font-bold">ACHIEVEMENTS</h1>
+                <hr>
+            </div>
+            <div class="section-body">
+                <div class="left-img">
+                    <img src="./assets/profile pic  (3).png" alt="Profile Image" width="290" height="250">
                 </div>
                 <div class="right-description">
                     <h4>Who's this guy?</h4>
@@ -181,11 +309,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="achievements">
-        <div class="achievements">
         </div>
     </section>
     <section id="contact">
@@ -194,8 +317,6 @@
     </section>
 </body>
 
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>-->
-<!-- <script src="./index.js"></script> -->
+<script src="./index.js"></script>
 
 </html>

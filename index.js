@@ -1,11 +1,12 @@
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-}
+$(document).ready(function () {
+  $(".skillbar").each(function () {
+    $(this)
+      .find(".skillbar-bar")
+      .animate(
+        {
+          width: $(this).attr("data-percent"),
+        },
+        1000
+      );
+  });
+});

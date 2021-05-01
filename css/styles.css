@@ -46,7 +46,7 @@ html {
   background-color: #f0b223;
 }
 
-.header-btn:hover > .fas {
+.header-btn:hover > .fa-arrow-right {
   animation: arrow-animation 0.2s linear forwards;
 }
 
@@ -63,6 +63,7 @@ html {
 
 /* navbar */
 nav {
+  z-index: 10;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -136,7 +137,7 @@ h1 {
 
 /* About */
 
-.about {
+.section-body {
   display: flex;
   justify-content: center;
   margin-bottom: 75px;
@@ -149,6 +150,17 @@ h1 {
   margin: 35px 10%;
 }
 
+.right-img {
+  order: 2;
+  margin: 0px 15% 40px 0px;
+}
+
+.left-description {
+  order: 1;
+  margin: 35px 10%;
+  text-align: right;
+}
+
 p {
   display: block;
   font-size: 1.1rem;
@@ -156,22 +168,39 @@ p {
   padding-top: 10px;
 }
 
+/* skills */
+
 #skills {
-  background-color: #2a1a5e;
+  /* background-color: #2a1a5e; */
+  background-color: #f0f0f0;
 }
 
-@media (max-width: 768px) {
+#achievements {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 825px) {
   .intro > h1 {
     font-size: 1.575rem;
     line-height: 2.25rem;
   }
-  .about {
+  .section-body {
     display: block;
+    display: flex;
+    flex-direction: column;
   }
-  .left-img {
+  .left-img,
+  .right-img {
     display: flex;
     margin: auto;
     justify-content: center;
+  }
+  .left-description {
+    order: 2;
+    text-align: center;
+  }
+  .right-img {
+    order: 1;
   }
   .container-flex {
     text-align: center;

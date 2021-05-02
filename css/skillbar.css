@@ -8,6 +8,7 @@
 }
 
 .skillbar {
+  text-align: right;
   position: relative;
   display: block;
   margin-bottom: 15px;
@@ -29,15 +30,11 @@
   transition-property: width, background-color;
 }
 
-/* .skillbar::after {
-  opacity: 0.5;
-} */
-
 .skillbar-title {
   position: absolute;
   top: 0;
   left: 0;
-  width: 110px;
+  width: 115px;
   font-weight: bold;
   font-size: 13px;
   color: #fff;
@@ -52,7 +49,7 @@
 
 .skillbar-title span {
   display: block;
-  padding: 0 20px;
+  padding: 0 12px 0 0px;
   height: 30px;
   line-height: 30px;
   background: rgba(0, 0, 0, 0.1);
@@ -90,10 +87,11 @@
   }
 
   .skillbar-title {
-    width: 80px;
+    width: 100px;
   }
 
   .skillbar-title span {
-    padding: initial;
+    /* padding: initial; */
+    padding: 0 7px 0 0px;
   }
 }

@@ -15,11 +15,28 @@ $(document).ready(function () {
   });
 });
 
-// const navLinks = document.querySelectorAll(".nav-link");
-// const menuToggle = document.getElementById("navbarNavAltMarkup");
-// const bsCollapse = new bootstrap.Collapse(menuToggle);
-// navLinks.forEach((l) => {
-//   l.addEventListener("click", () => {
-//     $(menuToggle).collapse("toggle");
-//   });
-// });
+const navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach((l) => {
+  $(l).click(function () {
+    setTimeout(function () {
+      $(".navbar-toggler").trigger("click");
+    }, 1000);
+  });
+});
+
+$(document).on("scroll", onScroll);
+
+function onScroll(event) {
+  var scrollPos = $(document).scrollTop();
+  $(".navbar-nav a").each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (
+      refElement.position().top - refElement.height() / 8 <= scrollPos &&
+      refElement.position().top + refElement.height() > scrollPos
+    ) {
+      $(".navbar-nav a").removeClass("active");
+      currLink.addClass("active");
+    }
+  });
+}

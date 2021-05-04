@@ -98,6 +98,10 @@ nav {
   background-color: #21144b;
 }
 
+.active {
+  color: #f0b223 !important;
+}
+
 /* .nav-bar > .flex {
   display: flex;
   border: none;
@@ -333,16 +337,18 @@ svg:hover {
   color: #f0f0f0;
 }
 
-@media (max-width: 825px) {
-  .intro > h1 {
-    font-size: 1.575rem;
-    line-height: 2.25rem;
-  }
-
+@media (max-width: 768px) {
   .nav-link {
     margin: initial;
     text-align: center;
     background-color: inherit;
+  }
+}
+
+@media (max-width: 825px) {
+  .intro > h1 {
+    font-size: 1.575rem;
+    line-height: 2.25rem;
   }
 
   .page-link > a {

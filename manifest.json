@@ -1,0 +1,22 @@
+{
+  "short_name": "Aadarsh",
+  "name": "Aadarsh Goyal",
+  "icons": [
+    {
+      "src": "assets/favicon//favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "assets/favicon//favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#2a1a5e",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#2a1a5e",
+  "description": "A simple portfolio website, showcasing my skills and contact information!"
+}

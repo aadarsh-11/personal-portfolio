@@ -27,7 +27,6 @@ h6 {
 }
 
 /* header */
-
 .intro {
   position: absolute;
   margin: 0;
@@ -102,34 +101,6 @@ nav {
   color: #f0b223 !important;
 }
 
-/* .nav-bar > .flex {
-  display: flex;
-  border: none;
-  background-color: #21144b;
-}
-.page-link {
-  padding: 1% 0% 1% 4%;
-  border: none;
-  font-size: 1.15rem;
-  background-color: #21144b;
-}
-
-.page-link > a {
-  color: white;
-  text-underline-offset: 0;
-  border: none;
-  font-size: 1.15rem;
-  text-decoration: none;
-}
-
-.page-link > a:hover {
-  color: #f0b223;
-}
-
-.page-link:hover {
-  background-color: inherit;
-  border: inherit;
-} */
 /* general */
 h1 {
   text-align: center;
@@ -140,9 +111,11 @@ h1 {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+
 .font-bold {
   font-weight: 700;
 }
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -166,8 +139,6 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-
-/* About */
 
 .section-body {
   display: flex;
@@ -203,10 +174,13 @@ p {
 }
 
 /* skills */
-
 #skills {
   /* background-color: #2a1a5e; */
   background-color: #f0f0f0;
+}
+
+#projects img {
+  transition-duration: 0.3s;
 }
 
 #projects img:hover {
@@ -230,6 +204,7 @@ p {
   -ms-transform: skewY(7deg); /* IE 9 */
   transform: skewY(7deg);
 }
+
 .triangular-r {
   margin-top: 30px;
   z-index: -1;
@@ -351,30 +326,32 @@ svg:hover {
     line-height: 2.25rem;
   }
 
-  .page-link > a {
-    font-size: 1rem;
-  }
   .section-body {
     display: block;
     display: flex;
     flex-direction: column;
   }
+
   .left-img,
   .right-img {
     display: flex;
     margin: auto;
     justify-content: center;
   }
+
   .left-description {
     order: 2;
     text-align: center;
   }
+
   .right-img {
     order: 1;
   }
+
   .container-flex {
     text-align: center;
   }
+
   p {
     text-align: left;
     padding-top: initial;
@@ -396,6 +373,7 @@ svg:hover {
     text-align: center;
     margin: 70px 10px 25px;
   }
+
   #footer p {
     text-align: center;
   }

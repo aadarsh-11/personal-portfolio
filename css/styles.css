@@ -175,8 +175,8 @@ p {
 
 /* skills */
 #skills {
-  /* background-color: #2a1a5e; */
-  background-color: #f0f0f0;
+  background-color: rgb(42, 26, 94, 0.95);
+  /* background-color: #f0f0f0; */
 }
 
 #projects img {
